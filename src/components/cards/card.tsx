@@ -9,6 +9,7 @@ interface CardProps {
   text: string;
   color: string;
 }
+
 const CardLinkContainer = styled.a`
   text-decoration: none;
   color: #000000;
@@ -18,14 +19,20 @@ const CardLinkContainer = styled.a`
     transform: scale(1.05);
   }
 `;
+
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px;
-  top: 295px;
-  left: 882px;
+  border: 2px solid transparent; // Adicione uma borda transparente para evitar mudanças de layout
+  margin: 1em; // Adicione margens para espaçamento
+  width: 100%; // Ajusta a largura para 100% em telas menores
+
+  @media (min-width: 768px) {
+    width: 24.5em; // Largura fixa em telas maiores
+  }
 `;
+
 const CardImgContaider = styled.div<{ color?: string }>`
   padding: 1em;
   display: flex;
@@ -39,6 +46,7 @@ const CardImgContaider = styled.div<{ color?: string }>`
   border-radius: 4px 4px 0px 0px;
   background: ${(props) => props.color};
 `;
+
 const CardDescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;

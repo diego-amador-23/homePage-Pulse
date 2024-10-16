@@ -49,6 +49,8 @@ navigator.serviceWorker
     console.error("Error in Service Worker or Push Subscription:", error);
   });
 
+  
+
 function App() {
   return (
     <AppContainer>

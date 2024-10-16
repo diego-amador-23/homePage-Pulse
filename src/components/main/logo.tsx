@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LogoImg from "../../assets/logo_romi_connect-e5022712.svg";
+import LogoImg from "../../assets/LOGO-ROMI-PULSE-AZUL.svg";
 
 const LogoContainer = styled.div`
   display: flex; // Permite centralizar o logo

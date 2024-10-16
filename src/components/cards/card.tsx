@@ -86,13 +86,6 @@ export const cardData = [
     color:
       "linear-gradient(180deg, #00AE06 0%, #0D6E10 100%) 0% 0% no-repeat padding-box;",
   },
-  {
-    image: <img src={ImgInsta} alt="Logo_Instalador" />,
-    title: "Instalador",
-    text: "Instale, atualize e atribua máquinas a clientes.",
-    color:
-      "linear-gradient(180deg, #59009E 0%, #36065B 100%) 0% 0% no-repeat padding-box;",
-  },
 ];
 function Card({ image, title, text, color }: CardProps) {
   return (
